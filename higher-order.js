@@ -116,7 +116,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 let orderTotals = orders.map(function(num){
-  return num.price + (num.price * num.tax)
+  return num.price * (1 + num.tax)
 })
 
 console.log(orderTotals)
